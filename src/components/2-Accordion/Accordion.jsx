@@ -17,6 +17,8 @@ submenu:["red","yellow","black"]},
 const Accordion = () => {
 
   return (
+    <>
+    <h1 className="main-title">ACCORDION</h1>
     <div className="container">
       {
         data.map((item)=>{
@@ -25,7 +27,10 @@ const Accordion = () => {
           )
         })
       }
+     
     </div>
+     <hr />
+     </>
   );
 };
 

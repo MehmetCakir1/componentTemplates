@@ -7,8 +7,8 @@ import Image from './components/3-Image/Image'
 const App = () => {
   return (
     <div>
-      {/* <ProgressBar/> */}
-      {/* <Accordion/> */}
+      <ProgressBar/>
+      <Accordion/>
       <Image/>
       </div>
   )

@@ -10,8 +10,8 @@
   .circle{
     border-radius: 50%;
     border: 1px solid;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,12 +35,29 @@
     border: 1px solid rgb(6, 221, 6);
   }
   
-  
+
   .btn-div{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 2rem;
+  }
+
+  .btn{
+    width: 6rem;
+    padding: 5px;
+    border: 1px solid brown;
+    color:brown;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 1s ease;
+  }
+  .btn:hover{
+    background-color: brown;
+    color: white;
+  }
+  .tick{
+    font-size: 1.5rem;
   }

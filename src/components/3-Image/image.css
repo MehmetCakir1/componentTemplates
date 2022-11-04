@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 .main-img{
     width: 500px;
