@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.submenu{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms linear;
+
+}
+.openMenu{
+    max-height: 5rem;
+    overflow: hidden;
+    transition: all 500ms linear;
+}
+h1{
+    cursor: pointer;
+}

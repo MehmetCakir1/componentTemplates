@@ -1,0 +1,24 @@
+.img-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.main-img{
+    width: 500px;
+    height: 400px;
+}
+.second-div{
+    display: flex;
+    align-items: center;
+}
+.sub-img{
+    width: 117.5px;
+    height: 100px;
+    margin:  5px;
+    cursor: pointer;
+}
+.arrow{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
