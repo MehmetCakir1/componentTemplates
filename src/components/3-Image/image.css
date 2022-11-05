@@ -6,7 +6,7 @@
 }
 .main-img{
     width: 500px;
-    height: 400px;
+    height: auto;
 }
 .second-div{
     display: flex;
@@ -21,4 +21,22 @@
 .arrow{
     font-size: 1.8rem;
     cursor: pointer;
+}
+
+@media(max-width:600px) {
+    .main-img{
+        display:block;
+        margin: auto;
+        width: 350px;
+        height: 300px;
+    }
+    .sub-img{
+        width: 80px;
+        height: 80px;
+        /* margin:  5px; */
+        cursor: pointer;
+    }
+    .arrow{
+       display: none;
+    }
 }

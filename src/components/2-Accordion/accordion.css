@@ -35,7 +35,5 @@
 .p-line{
     text-align: center;
     text-transform: capitalize;
-}
-.icon{
-    font-size: smaller;
+    cursor: pointer;
 }

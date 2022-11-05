@@ -17,8 +17,11 @@ submenu:["red","yellow","black"]},
 const SubMenu = ({ item }) => {
   const [isShow, setIsShow] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = (e) => {
     setIsShow(!isShow);
+  //  let control=data.find((item)=>item.title==e.target.innerText)
+  //  console.log(control);
+  //  control?.classList.add("openMenu")
   };
 
 
@@ -27,11 +30,9 @@ const SubMenu = ({ item }) => {
       <h1 onClick={handleClick}
       className="title"
       >{item.title}
-      <span className="icon">
         {
           isShow ?  <FiChevronUp/> :  <FiChevronDown/>
         }
-      </span>
       </h1>
         <div className={`${isShow ? "openMenu" :"submenu"}`}>
           {item.submenu.map((sub, index) => {
