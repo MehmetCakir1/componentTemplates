@@ -47,7 +47,7 @@ const Image = () => {
       <h1 className="main-title">CLICKABLE IMAGES</h1>
       <div className="img-container">
         <div>
-          <img src={images[index].url} alt="image" className="main-img" />
+          <img src={images[index].url} alt="main" className="main-img" />
         </div>
         <div className="second-div">
           <BsFillArrowLeftCircleFill
@@ -57,6 +57,7 @@ const Image = () => {
           {images.map((item, index) => {
             return (
               <img
+              key={index}
                 src={item.url}
                 alt="sub-img"
                 onClick={() => setIndex(index)}
