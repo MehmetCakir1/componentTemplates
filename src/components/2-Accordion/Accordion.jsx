@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./accordion.css";
 import SubMenu from "./SubMenu";
 
@@ -21,9 +20,9 @@ const Accordion = () => {
     <h1 className="main-title">ACCORDION</h1>
     <div className="container">
       {
-        data.map((item)=>{
+        data.map((item,index)=>{
           return(
-            <SubMenu key={item.id} item={item}/>
+            <SubMenu key={index} item={item}/>
           )
         })
       }
