@@ -1,48 +1,39 @@
 import React, { useState } from "react";
-import {FiChevronDown, FiChevronUp} from "react-icons/fi"
-
-const data=[
-  {title:"Fruits",
-  id:1,
-submenu:["apple","pear","banana"]},
-{title:"Cars",
-id:2,
-submenu:["mercedes","porche","bmw"]},
-{title:"Colors",
-id:3,
-submenu:["red","yellow","black"]},
-]
 
 
-const SubMenu = ({ item }) => {
-  const [isShow, setIsShow] = useState(false);
+const SubMenu = ({ data}) => {
 
-  const handleClick = (e) => {
-    setIsShow(!isShow);
-  //  let control=data.find((item)=>item.title==e.target.innerText)
-  //  console.log(control);
-  //  control?.classList.add("openMenu")
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleClick = (index) => {
+    if (activeIndex === index) {
+      setActiveIndex(null);
+    } else {
+      setActiveIndex(index);
+    }
   };
 
+  const renderedItems = data.map((item, index) => {
+    const isActive = index === activeIndex ? "active" : "hide";
 
   return (
-    <div className="main-part">
-      <h1 onClick={handleClick}
-      className="title"
-      >{item.title}
-        {
-          isShow ?  <FiChevronUp/> :  <FiChevronDown/>
-        }
+    <div key={index} className="main-part">
+      <h1 onClick={()=>handleClick(index)} className="title">
+        {item.title}
       </h1>
-        <div className={`${isShow ? "openMenu" :"submenu"}`}>
-          {item.submenu.map((sub, index) => {
-            return <p key={index}
-            className="p-line"
-            >{sub}</p>;
-          })}
-        </div>
+      <div className={`${isActive}`}>
+        {item.submenu.map((sub, index) => {
+          return (
+            <p key={index} className="p-line">
+              {sub}
+            </p>
+          );
+        })}
+      </div>
     </div>
   );
+});
+return <div>{renderedItems}</div>;
 };
 
 export default SubMenu;
