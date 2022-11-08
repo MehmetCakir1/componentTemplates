@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
     gap: 5rem;
+    padding: 2rem;
 }
 .date-container input{
     width: 10rem;

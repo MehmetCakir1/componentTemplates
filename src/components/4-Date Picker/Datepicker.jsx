@@ -29,6 +29,7 @@ const Datepicker = () => {
 
   return (
  <>
+ <h1 className='main-title'>DATE PICKER</h1>
     <div className='date-container'>
         <input 
         type="date"
@@ -51,8 +52,8 @@ const Datepicker = () => {
             <span>Last Date :</span>
             <span>{lastDate}</span>
         </div>
-        <hr />
     </div>
+    <hr />
  </>
   )
 }
