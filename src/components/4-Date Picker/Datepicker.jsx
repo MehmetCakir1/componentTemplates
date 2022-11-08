@@ -40,9 +40,7 @@ const Datepicker = () => {
         value={lastDate}
         onChange={handleLastDate}/>
     </div>
-    <div>
-        <h3>{errorMsg && errorMsg}</h3>
-    </div>
+        <h3 className='error-msg'>{errorMsg}</h3>
     <div className='date-div'>
         <div>
             <span>First Date :</span>

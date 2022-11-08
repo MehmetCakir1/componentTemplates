@@ -19,3 +19,15 @@
     padding: 2rem;
     font-size: 20px;
 }
+.error-msg{
+    text-align: center;
+    color: red;
+}
+
+span:first-child{
+    display: inline-block;
+    font-weight: 600;
+    width: 7rem;
+    text-align: end;
+    margin: 0 1rem;
+}
